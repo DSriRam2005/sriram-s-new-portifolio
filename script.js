@@ -17,14 +17,20 @@ menuIcon.addEventListener('click', () => {
     navbar.classList.toggle('active');
 });
 
-// Form Validation
-document.querySelector('form').addEventListener('submit', function (event) {
-    let name = document.querySelector('input[name="name"]').value;
-    let email = document.querySelector('input[name="email"]').value;
-    let message = document.querySelector('textarea[name="message"]').value;
-
-    if (name === '' || email === '' || message === '') {
-        alert('Please fill in all fields.');
-        event.preventDefault();
-    }
+// Glassmorphism Animation
+document.addEventListener("DOMContentLoaded", function() {
+    let glassEffect = document.querySelector(".home-glass");
+    glassEffect.style.animation = "fadeIn 1s ease-in-out";
 });
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
