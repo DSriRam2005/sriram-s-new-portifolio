@@ -1,0 +1,71 @@
+:root {
+    --bg-color: #081b29;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+    --accent-color: #ff4081;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 1.8rem;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.navbar a {
+    color: var(--text-color);
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+
+.navbar a:hover {
+    color: var(--accent-color);
+}
+
+.btn {
+    background: var(--main-color);
+    color: var(--bg-color);
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--accent-color);
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
