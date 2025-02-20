@@ -1,14 +1,17 @@
 :root {
-    --bg-color: #081b29;
-    --text-color: #ededed;
+    --bg-color: #1a1a2e;
+    --text-color: #fff;
     --main-color: #00abf0;
-    --accent-color: #ff4081;
+    --glass-bg: rgba(255, 255, 255, 0.15);
+    --glass-border: rgba(255, 255, 255, 0.3);
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     background: var(--bg-color);
     color: var(--text-color);
+    margin: 0;
+    padding: 0;
 }
 
 h2 {
@@ -18,11 +21,13 @@ h2 {
 }
 
 .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background: rgba(0, 0, 0, 0.8);
-    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 15px 20px;
 }
 
 .header .logo {
@@ -38,34 +43,63 @@ h2 {
 }
 
 .navbar a:hover {
-    color: var(--accent-color);
+    color: var(--main-color);
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+.home-glass {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    backdrop-filter: blur(10px);
+    background: var(--glass-bg);
+    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .btn {
     background: var(--main-color);
-    color: var(--bg-color);
-    padding: 10px 20px;
+    color: #fff;
+    padding: 12px 20px;
     border-radius: 8px;
     transition: 0.3s;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn.outline {
+    background: transparent;
+    border: 2px solid var(--main-color);
 }
 
 .btn:hover {
-    background: var(--accent-color);
+    transform: scale(1.05);
 }
 
 .project-container {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    justify-content: center;
+    gap: 20px;
 }
 
 .project-card {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--glass-bg);
     padding: 15px;
     border-radius: 10px;
-    transition: transform 0.3s;
+    text-align: center;
+    border: 1px solid var(--glass-border);
 }
 
-.project-card:hover {
-    transform: scale(1.05);
+.footer {
+    text-align: center;
+    padding: 15px;
 }
