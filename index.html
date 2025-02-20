@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surya Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Surya | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
 
     <!-- Header -->
     <header class="header">
         <a href="#" class="logo">Surya.</a>
-        <div class="bx bx-menu" id="menu-icon"></div>
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
@@ -20,19 +19,27 @@
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
         </nav>
+        <div id="menu-icon" class="bx bx-menu"></div>
     </header>
 
     <!-- Home Section -->
     <section class="home" id="home">
         <div class="home-content">
-            <h1>Hi, I'm <span>Surya Bandaru</span></h1>
+            <h1>I'm <span>Surya Bandaru</span></h1>
             <h3 class="animated-text">Frontend Developer</h3>
-            <p>Passionate about creating engaging and functional websites with modern web technologies.</p>
+            <p>Building creative and modern web experiences with the latest technologies.</p>
             <div class="btn-box">
                 <a href="#contact" class="btn">Hire Me</a>
-                <a href="#projects" class="btn">See Projects</a>
+                <a href="#projects" class="btn outline">See Projects</a>
             </div>
         </div>
+        <div class="home-glass"></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+        <p>A passionate frontend developer who enjoys crafting visually stunning and functional web applications.</p>
     </section>
 
     <!-- Projects Section -->
@@ -56,7 +63,7 @@
         <ul>
             <li>HTML, CSS, JavaScript</li>
             <li>React.js & Vue.js</li>
-            <li>Responsive Web Design</li>
+            <li>Material UI & Tailwind CSS</li>
             <li>UI/UX Development</li>
         </ul>
     </section>
@@ -77,6 +84,6 @@
         <p>© 2024 Surya Bandaru | All Rights Reserved</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
